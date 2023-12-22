@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <title>Quest</title>
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <img src="quest.png">
+            <ul>
+                <li class="nav_element"><a href="#">Home</a></li>
+                <li class="nav_element"><a href="#">About</a></li>
+                <li class="nav_element"><a href="#">Courses</a></li>
+                <li class="nav_element"><a href="#">Page</a></li>
+                <li class="nav_element"><a href="#">Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+
+     <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+        <p>This is a Modal.</p>
+    </div>
+  
+  </div>
+  
+  
+  
+</body>
+<h1>GROW YOUR SKILLS,
+    <BR> DEFINE YOUR FUTURE.
+</h1>
+
+<h4>Presenting Academy, the tech school of the future.
+    <br>We teach you the right skills to be prepared for tomorrow.
+</h4>
+
+<nav>
+    <button class="button-1 button_style">
+        Explore Courses</button>
+
+    <button id="myBtn"class="button-2 button_style">
+        Learn More</button>
+</nav>
+<img class="img-1" src="Vase.png" height="600">
+
+<nav>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+     
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        console.log(btn);
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
+</html>
